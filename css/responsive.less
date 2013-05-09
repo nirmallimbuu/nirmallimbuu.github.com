@@ -1,0 +1,132 @@
+@base-color: #e3e3ef;
+
+
+/*IE handle viewport*/
+@-ms-viewport {
+  width: device-width;
+}
+
+* {
+  /*border will not be added to width but inside*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body {
+  font: 100%/1.5em Helvetica,Arial, sans-serif;
+  color: #313131;
+  background-color: #cccccc;
+}
+
+img {
+  /*Make image fit to screen*/
+  max-width: 100%;
+  /*Save aspect ratio of the image*/
+  height: auto;
+}
+
+
+.row {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+
+
+
+.container  {
+  width: 100%;
+
+  .columns {
+    float: left;
+    background: tomato;
+    margin: 0 0 1em;
+    text-align: center;
+    border-right: 1px solid silver;
+    border-left: 1px solid gold;
+  }
+    
+  /*Calculated values: all fit to screen*/ 
+  .columns.one,
+  .columns.two,
+  .columns.three,
+  .columns.four,
+  .columns.five,
+  .columns.six,
+  .columns.seven,
+  .columns.eight,
+  .columns.nine,
+  .columns.ten,
+  .columns.eleven,
+  .columns.twelve,
+  .columns.thirteen,
+  .columns.fourteen,
+  .columns.fifteen,
+  .columns.sixteen { width: 100%; }
+
+}
+
+
+.clearfix:after,
+.container:after {
+  content: '';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.clearfix,
+.container {
+  zoom: 1;
+}
+
+
+
+
+/*Resolution : Width: 500px or above*/
+@media only screen and (min-width: 500px) {
+  .container  {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #dddddd;
+
+    
+
+    /*Calculated values*/ 
+    .columns.one { width: 6.25%; }
+    .columns.two { width: 12.5%; }
+    .columns.three { width: 18.75%; }
+    .columns.four { width: 25%; }
+    .columns.five { width: 31.25%; }
+    .columns.six { width: 37.5%; }
+    .columns.seven { width: 43.75%; }
+    .columns.eight { width: 50%; }
+    .columns.nine { width: 56.25%; }
+    .columns.ten { width: 62.5%; }
+    .columns.eleven { width: 68.75%; }
+    .columns.twelve { width: 75%; }
+    .columns.thirteen { width: 81.25%; }
+    .columns.fourteen { width: 87.5%; }
+    .columns.fifteen { width: 93.75%; }
+    .columns.sixteen { width: 100%; }
+
+  }
+}
+
+
+/*IE compatibility*/
+.lt-ie9 {
+  .container {
+    max-width: 1024px;
+  }
+}
