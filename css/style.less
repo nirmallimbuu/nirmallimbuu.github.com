@@ -81,6 +81,35 @@ nav[role="primary"] {
 }
 
 
+
+
+/*Parallex images*/
+.parallex-image {
+  background-image: url('../images/profile.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  
+  margin: 20px 0px;
+  height: 300px;
+  @bold-border:4px solid gray;
+  border-left: @bold-border;
+  border-right: @bold-border;
+  
+  q {
+    display: block;
+    color: #ddd;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 90px;
+    height: inherit;
+    line-height: 44px;
+  }
+  
+}
+
+
 @media screen and (min-width: 500px) {
 
   .container {
@@ -112,7 +141,14 @@ nav[role="primary"] {
     
   }
   
+  
+  /*Parallex images*/
+  .parallex-image {
+    q {
+      padding: 150px;
+    }
+  }
+  
 }
-
 
 

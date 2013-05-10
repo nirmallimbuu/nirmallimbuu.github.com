@@ -12,13 +12,14 @@ h1.logo{float:left;}h1.logo a{width:200px;height:71px;display:block;background:u
 a.nav-link{float:right;background:red;text-decoration:none;color:white;padding:.5em;font-weight:bold;}
 nav[role="primary"] ul{list-style:none;position:absolute;bottom:0;left:0;width:100%;}nav[role="primary"] ul li a{text-decoration:none;font-weight:bold;background:#444;display:block;padding:.75em;border-bottom:1px solid #999;color:#f7f7f7;}nav[role="primary"] ul li a:hover{background:tomato;}
 nav[role="primary"] ul li:last-child a{border:none;}
-@media screen and (min-width:500px){.container .columns{background:#aaaaaa;} .container .columns.banner{padding-bottom:30%;background:url('../images/ducati.png') no-repeat;background-size:cover;} a.nav-link{display:none;} nav[role="primary"] ul{position:relative;}nav[role="primary"] ul li a{float:left;background:none;color:#333;border-bottom:none;}}
+.parallex-image{background-image:url('../images/profile.jpg');background-attachment:fixed;background-size:cover;background-position:50% 50%;margin:20px 0px;height:300px;border-left:4px solid #808080;border-right:4px solid #808080;}.parallex-image q{display:block;color:#ddd;font-size:40px;font-weight:bold;background-color:rgba(0, 0, 0, 0.5);padding:90px;height:inherit;line-height:44px;}
+@media screen and (min-width:500px){.container .columns{background:#aaaaaa;} .container .columns.banner{padding-bottom:30%;background:url('../images/ducati.png') no-repeat;background-size:cover;} a.nav-link{display:none;} nav[role="primary"] ul{position:relative;}nav[role="primary"] ul li a{float:left;background:none;color:#333;border-bottom:none;} .parallex-image q{padding:150px;}}
 
 @-ms-viewport{width:device-width;}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
 body{font:100%/1.5em Helvetica,Arial,sans-serif;color:#313131;background-color:#cccccc;}
 img{max-width:100%;height:auto;}
 .row{float:left;clear:both;width:100%;}
-.container{width:100%;}.container .columns{float:left;background:white;margin:0 0 1em;text-align:center;border-right:1px solid silver;border-left:1px solid gold;}
+.container{width:100%;}.container .columns{float:left;background:white;margin:0 0 1em;text-align:center;}
 .container .columns.one,.container .columns.two,.container .columns.three,.container .columns.four,.container .columns.five,.container .columns.six,.container .columns.seven,.container .columns.eight,.container .columns.nine,.container .columns.ten,.container .columns.eleven,.container .columns.twelve,.container .columns.thirteen,.container .columns.fourteen,.container .columns.fifteen,.container .columns.sixteen{width:100%;}
 .clearfix:after,.container:after{content:'';display:block;overflow:hidden;visibility:hidden;width:0;height:0;clear:both;}
 .clearfix,.container{zoom:1;}
