@@ -1,0 +1,27 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+:focus{outline:0;}
+body{line-height:1;color:black;background:white;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+
+html{font:100%/1.5em Helvetica,Arial,sans-serif;min-height:100%;position:relative;padding-bottom:20em;}
+h1.logo{float:left;}h1.logo a{width:200px;height:71px;display:block;background:url(../images/logo.jpg) no-repeat 0 0;border:0;font:0/0 a;text-shadow:none;color:transparent;background-color:transparent;}
+a.nav-link{float:right;background:red;text-decoration:none;color:white;padding:.5em;font-weight:bold;}
+nav[role="primary"] ul{list-style:none;position:absolute;bottom:0;left:0;width:100%;}nav[role="primary"] ul li a{text-decoration:none;font-weight:bold;background:#444;display:block;padding:.75em;border-bottom:1px solid #999;color:#f7f7f7;}nav[role="primary"] ul li a:hover{background:tomato;}
+nav[role="primary"] ul li:last-child a{border:none;}
+@media screen and (min-width:500px){.container .columns{background:#aaaaaa;} .container .columns.banner{padding-bottom:30%;background:url('../images/ducati.png') no-repeat;background-size:cover;} a.nav-link{display:none;} nav[role="primary"] ul{position:relative;}nav[role="primary"] ul li a{float:left;background:none;color:#333;border-bottom:none;}}
+
+@-ms-viewport{width:device-width;}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+body{font:100%/1.5em Helvetica,Arial,sans-serif;color:#313131;background-color:#cccccc;}
+img{max-width:100%;height:auto;}
+.row{float:left;clear:both;width:100%;}
+.container{width:100%;}.container .columns{float:left;background:white;margin:0 0 1em;text-align:center;border-right:1px solid silver;border-left:1px solid gold;}
+.container .columns.one,.container .columns.two,.container .columns.three,.container .columns.four,.container .columns.five,.container .columns.six,.container .columns.seven,.container .columns.eight,.container .columns.nine,.container .columns.ten,.container .columns.eleven,.container .columns.twelve,.container .columns.thirteen,.container .columns.fourteen,.container .columns.fifteen,.container .columns.sixteen{width:100%;}
+.clearfix:after,.container:after{content:'';display:block;overflow:hidden;visibility:hidden;width:0;height:0;clear:both;}
+.clearfix,.container{zoom:1;}
+@media only screen and (min-width:500px){.container{width:90%;margin:0 auto;background-color:#dddddd;}.container .columns.one{width:6.25%;} .container .columns.two{width:12.5%;} .container .columns.three{width:18.75%;} .container .columns.four{width:25%;} .container .columns.five{width:31.25%;} .container .columns.six{width:37.5%;} .container .columns.seven{width:43.75%;} .container .columns.eight{width:50%;} .container .columns.nine{width:56.25%;} .container .columns.ten{width:62.5%;} .container .columns.eleven{width:68.75%;} .container .columns.twelve{width:75%;} .container .columns.thirteen{width:81.25%;} .container .columns.fourteen{width:87.5%;} .container .columns.fifteen{width:93.75%;} .container .columns.sixteen{width:100%;}}.lt-ie9 .container{max-width:1024px;}
+
+

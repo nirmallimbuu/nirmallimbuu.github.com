@@ -1,4 +1,86 @@
 
+html {
+  font: 100%/1.5em Helvetica,Arial, sans-serif;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 20em;
+}
+
+
+/*Logo*/
+h1 {
+  &.logo {
+    float: left;
+    
+    a {
+      width: 200px;
+      height: 71px;
+      display: block;
+      background: url(../images/logo.jpg) no-repeat 0 0 ;
+      
+      /*fix mobile drawing big canvas*/
+      /*on pushing text somewhere else*/
+      border: 0;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color: transparent;
+      
+    }
+    
+  }
+}
+
+
+
+
+/*Navigation*/
+
+a.nav-link {
+  float: right;
+  background: red;
+  text-decoration: none;
+  color: white;
+  padding: .5em;
+  font-weight: bold;
+}
+
+nav[role="primary"] {
+  
+  ul {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+  
+    li {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        background: #444;
+        display: block;
+        padding: .75em;
+        border-bottom: 1px solid #999;
+        color: #f7f7f7;
+        
+        &:hover {
+          background: tomato;
+        }
+        
+      }
+      &:last-child {
+        a {
+          border: none;
+        }
+      }
+    }
+  }
+  
+}
+
+
 @media screen and (min-width: 500px) {
 
   .container {
@@ -11,6 +93,26 @@
       background-size: cover;
     }
   }
+  
+  /*navigation*/
+  a.nav-link {
+    display:none;
+  }
+  nav[role="primary"] ul {
+    position: relative;
+    
+    li {
+      a {
+        float: left;
+        background: none;
+        color: #333;
+        border-bottom: none;
+      }
+    }
+    
+  }
+  
 }
+
 
 
