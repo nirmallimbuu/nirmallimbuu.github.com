@@ -1,6 +1,33 @@
 /*http://lesselements.com/*/
 @import "elements.less";
 
+/*Mixins*/
+.transition-property(@property) {
+  -webkit-transition-property: @property;
+  -moz-transition-property: @property;
+  -o-transition-property: @property;
+  transition-property: @property;
+}
+.transition-timing-function(@type) {
+  -webkit-transition-timing-function: @type;
+  -moz-transition-timing-function: @type;
+  -o-transition-timing-function: @type;
+  transition-timing-function: @type;
+}
+.transition-all(@property, @duration:0.3s, @type: ease) {
+  -webkit-transition: @property @duration @type;
+  -moz-transition: @property @duration @type;
+  -o-transition: @property @duration @type;
+  transition: @property @duration @type;
+}
+.transition-delay(@duration:0.2s, @ease:ease-out, @delay:0s) {
+  -webkit-transition: all @duration @ease @delay;
+  -moz-transition: all @duration @ease @delay;
+  -o-transition: all @duration @ease @delay;
+  transition: all @duration @ease @delay;
+}
+
+
 html {
   font: 100%/1.5em Helvetica,Arial, sans-serif;
   min-height: 100%;
@@ -84,6 +111,114 @@ nav[role="primary"] {
 
 
 
+/*Page scroll*/
+.panel {
+/*  min-height: 1024px;
+  min-width: 960px;*/
+  
+  .page-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+}
+
+#over {
+  position: fixed;
+  width: 160px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: gray;
+}
+
+
+
+
+/*Animations*/
+#css-items li {
+  background-color: #ccc;
+  border: 1px solid gray;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  .transition-property(width);
+  .transition-duration(1s);
+  .transition-timing-function(cubic-bezier);
+  
+  &:hover {
+    width: 260px;
+  }
+  
+  a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    color: blue;
+    .transition-property(color);
+    .transition-duration(1s);
+    
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+
+/*Cool Animated Buttons*/
+.button {
+  background-color: #4ae;
+  border: 1px solid #28c;
+  display: block;
+  height: 55px;
+  width: 220px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  box-shadow: 1px 1px 2px #aaa, 1px 1px 1px #6cf inset;
+  .rounded(6px);
+  .transition(0.5s, ease);
+  span {
+    color: #fff;
+    text-shadow: 0px 1px #888;
+    text-decoration: none;
+    position: absolute;
+    /*Big text*/
+    &.button-label {
+      font-size: 22px;
+      top: 14px;
+      right: 20px;
+      .transition(0.3s, ease);
+    }
+    /*Description text*/
+    &.button-desc {
+      font-size: 14px;
+      top: 26px;
+      right: -200px;
+      /*.transition(0.3s, ease);*/
+      .transition-delay(0.3s, ease, 0.3s);
+    }
+  }
+  /*Move text on hover*/
+  &:hover {
+    background-color: #6cf;
+    border: 1px solid #4ae;
+    box-shadow: 1px 1px 5px #aaa, 1px 1px 1px;
+    span {
+      &.button-label {
+        top: 5px;
+      }
+      &.button-desc {
+        right: 21px;
+      }
+    }
+  }
+  
+}
+
+
 
 /*Parallex images*/
 .parallex-image {
@@ -142,6 +277,21 @@ nav[role="primary"] {
     }
     
   }
+
+  /*Page Scroll*/
+  .panel {
+    min-height: 1024px;
+    min-width: 960px;
+
+    .page-image {
+      img {
+/*        max-width: 100%;*/
+        /*height: auto;*/
+      }
+    }
+
+  }
+
   
   
   /*Parallex images*/

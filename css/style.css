@@ -113,6 +113,7 @@ q {
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+/*Mixins*/
 html {
   font: 100%/1.5em Helvetica, Arial, sans-serif;
   min-height: 100%;
@@ -169,6 +170,126 @@ nav[role="primary"] ul li a:hover {
 nav[role="primary"] ul li:last-child a {
   border: none;
 }
+/*Page scroll*/
+.panel {
+  /*  min-height: 1024px;
+  min-width: 960px;*/
+
+}
+.panel .page-image img {
+  max-width: 100%;
+  height: auto;
+}
+#over {
+  position: fixed;
+  width: 160px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: gray;
+}
+/*Animations*/
+#css-items li {
+  background-color: #ccc;
+  border: 1px solid gray;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier;
+  -moz-transition-timing-function: cubic-bezier;
+  -o-transition-timing-function: cubic-bezier;
+  transition-timing-function: cubic-bezier;
+}
+#css-items li:hover {
+  width: 260px;
+}
+#css-items li a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  color: blue;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#css-items li a:hover {
+  color: red;
+}
+/*Cool Animated Buttons*/
+.button {
+  background-color: #4ae;
+  border: 1px solid #28c;
+  display: block;
+  height: 55px;
+  width: 220px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  box-shadow: 1px 1px 2px #aaa, 1px 1px 1px #6cf inset;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*Move text on hover*/
+
+}
+.button span {
+  color: #fff;
+  text-shadow: 0px 1px #888;
+  text-decoration: none;
+  position: absolute;
+  /*Big text*/
+
+  /*Description text*/
+
+}
+.button span.button-label {
+  font-size: 22px;
+  top: 14px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.button span.button-desc {
+  font-size: 14px;
+  top: 26px;
+  right: -200px;
+  /*.transition(0.3s, ease);*/
+
+  -webkit-transition: all 0.3s ease 0.3s;
+  -moz-transition: all 0.3s ease 0.3s;
+  -o-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+.button:hover {
+  background-color: #6cf;
+  border: 1px solid #4ae;
+  box-shadow: 1px 1px 5px #aaa, 1px 1px 1px;
+}
+.button:hover span.button-label {
+  top: 5px;
+}
+.button:hover span.button-desc {
+  right: 21px;
+}
 /*Parallex images*/
 .parallex-image {
   background-image: url('../images/profile.jpg');
@@ -211,6 +332,17 @@ nav[role="primary"] ul li:last-child a {
     background: none;
     color: #333;
     border-bottom: none;
+  }
+  /*Page Scroll*/
+  .panel {
+    min-height: 1024px;
+    min-width: 960px;
+  }
+  .panel .page-image img {
+    /*        max-width: 100%;*/
+  
+    /*height: auto;*/
+  
   }
   /*Parallex images*/
   .parallex-image q {
